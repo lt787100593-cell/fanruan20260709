@@ -674,7 +674,7 @@
       <!-- S12 为什么单纯AI报告不够 -->
       <section class="slide" data-title="为什么单纯AI报告不够">
         <div class="slide-content" style="padding:32px 48px;">
-          <div style="display:grid;grid-template-columns:3fr 7fr;gap:36px;height:100%;align-items:center;">
+          <div style="display:grid;grid-template-columns:3fr 7fr;gap:36px;align-items:center;">
             <!-- 左侧文案 -->
             <div style="display:flex;flex-direction:column;justify-content:center;">
               <span class="pill pill--orange" style="align-self:flex-start;margin-bottom:10px;">核心洞察</span>
@@ -715,17 +715,17 @@
             </div>
             <!-- 右侧截图 -->
             <div style="display:flex;align-items:center;justify-content:center;">
-              <div style="width:80%;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.1);background:#fff;" onmouseenter="s12Stop()" onmouseleave="s12Start()">
+              <div style="width:80%;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.1);background:#fff;max-height:calc(100vh - 120px);display:flex;flex-direction:column;" onmouseenter="s12Stop()" onmouseleave="s12Start()">
                 <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--g50);border-bottom:1px solid var(--border);">
                   <span style="width:10px;height:10px;border-radius:50%;background:#ff5f56;"></span>
                   <span style="width:10px;height:10px;border-radius:50%;background:#ffbd2e;"></span>
                   <span style="width:10px;height:10px;border-radius:50%;background:#27c93f;"></span>
                   <span style="flex:1;text-align:center;font-size:14px;color:var(--g400);" id="s12-title">食堂日均就餐人次指标</span>
                 </div>
-                <div style="position:relative;overflow:hidden;">
-                  <div id="s12-track" style="display:flex;transition:transform 500ms cubic-bezier(0.4,0,0.2,1);">
-                    <div style="min-width:100%;"><img src="指标中心/食堂日均就餐人次指标.png" alt="食堂日均就餐人次指标" style="width:100%;display:block;"></div>
-                    <div style="min-width:100%;"><img src="指标中心/明细数据表.png" alt="明细数据表" style="width:100%;display:block;"></div>
+                <div style="position:relative;overflow:hidden;flex:1;display:flex;">
+                  <div id="s12-track" style="display:flex;transition:transform 500ms cubic-bezier(0.4,0,0.2,1);width:100%;">
+                    <div style="min-width:100%;height:100%;display:flex;"><img src="指标中心/食堂日均就餐人次指标.png" alt="食堂日均就餐人次指标" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
+                    <div style="min-width:100%;height:100%;display:flex;"><img src="指标中心/明细数据表.png" alt="明细数据表" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
                   </div>
                 </div>
                 <div style="display:flex;justify-content:center;gap:8px;padding:10px 0;">
@@ -938,23 +938,23 @@
       <!-- S17 效果展示 -->
       <section class="slide" data-title="效果展示与质量保障">
         <div class="slide-content" style="justify-content:center;padding:36px 48px;">
-          <div style="display:grid;grid-template-columns:2.5fr 7.5fr;gap:32px;height:100%;align-items:center;">
-            <div>
-              <h2 style="font-size:35px;font-weight:700;margin:0 0 16px;">效果展示与质量保障</h2>
-              <div style="margin-bottom:16px;">
-                <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--g200);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--c-blue)" stroke-width="1.5"><rect x="2" y="2" width="16" height="16" rx="2"/><path d="M2 7h16M7 2v16"/></svg><div><p style="font-size:21px;font-weight:600;margin:0;">覆盖四大维度</p><p style="font-size:17px;color:var(--g500);margin:0;">论文·专利·项目·成果转化</p></div></div>
-                <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--g200);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--c-blue)" stroke-width="1.5"><path d="M3 3h14v14H3z"/><path d="M3 8h14"/></svg><div><p style="font-size:21px;font-weight:600;margin:0;">三类数据源整合</p><p style="font-size:17px;color:var(--g500);margin:0;">校内FineBI + 教育部 + OpenAlex</p></div></div>
-                <div style="display:flex;align-items:center;gap:10px;padding:12px 0;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--c-green)" stroke-width="1.5"><circle cx="10" cy="10" r="8"/><path d="M7 10l2 2 4-4"/></svg><div><p style="font-size:21px;font-weight:600;margin:0;">双Agent协同质量闭环</p><p style="font-size:17px;color:var(--g500);margin:0;">11维度质量评估</p></div></div>
+          <div style="display:grid;grid-template-columns:4fr 6fr;gap:32px;align-items:center;">
+            <div style="display:flex;flex-direction:column;gap:4px;padding-left:24px;">
+              <h2 style="font-size:42px;font-weight:700;margin:0 0 20px;">效果展示与质量保障</h2>
+              <div style="margin-bottom:20px;">
+                <div style="display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--g200);"><svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="var(--c-blue)" stroke-width="1.5"><rect x="2" y="2" width="16" height="16" rx="2"/><path d="M2 7h16M7 2v16"/></svg><div><p style="font-size:26px;font-weight:600;margin:0;">覆盖四大维度</p><p style="font-size:21px;color:var(--g500);margin:0;">论文·专利·项目·成果转化</p></div></div>
+                <div style="display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--g200);"><svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="var(--c-blue)" stroke-width="1.5"><path d="M3 3h14v14H3z"/><path d="M3 8h14"/></svg><div><p style="font-size:26px;font-weight:600;margin:0;">三类数据源整合</p><p style="font-size:21px;color:var(--g500);margin:0;">校内FineBI + 教育部 + OpenAlex</p></div></div>
+                <div style="display:flex;align-items:center;gap:14px;padding:16px 0;"><svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="var(--c-green)" stroke-width="1.5"><circle cx="10" cy="10" r="8"/><path d="M7 10l2 2 4-4"/></svg><div><p style="font-size:26px;font-weight:600;margin:0;">双Agent协同质量闭环</p><p style="font-size:21px;color:var(--g500);margin:0;">11维度质量评估</p></div></div>
               </div>
-              <p style="font-size:21px;font-weight:600;margin:0 0 10px;">质量验收流程</p>
-              <div class="timeline">
-                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-blue);"></div><div class="timeline__desc">Agent自动生成分析报告</div></div>
-                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-purple);"></div><div class="timeline__desc">质量评估Agent独立打分</div></div>
-                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-green);"></div><div class="timeline__desc">识别问题，给出修改建议</div></div>
-                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-orange);"></div><div class="timeline__desc">基于评估结果迭代优化</div></div>
+              <p style="font-size:26px;font-weight:600;margin:0 0 14px;">质量验收流程</p>
+              <div class="timeline" style="--tl-font:21px;">
+                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-blue);"></div><div class="timeline__desc" style="font-size:21px;">Agent自动生成分析报告</div></div>
+                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-purple);"></div><div class="timeline__desc" style="font-size:21px;">质量评估Agent独立打分</div></div>
+                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-green);"></div><div class="timeline__desc" style="font-size:21px;">识别问题，给出修改建议</div></div>
+                <div class="timeline__item"><div class="timeline__dot" style="background:var(--c-orange);"></div><div class="timeline__desc" style="font-size:21px;">基于评估结果迭代优化</div></div>
               </div>
             </div>
-            <div><div class="screenshot-container" style="max-height:75vh;"><div class="screenshot-chrome"><span class="screenshot-dot screenshot-dot--red"></span><span class="screenshot-dot screenshot-dot--yellow"></span><span class="screenshot-dot screenshot-dot--green"></span><span class="screenshot-url" id="report-carousel-title">科研产出分析报告（第1部分）</span></div><div style="position:relative;overflow:hidden;width:100%;"><div id="report-carousel-slides" style="display:flex;transition:transform 0.5s ease;"><div style="min-width:100%;"><img src="素材/dora/科研报告_第1段.png" alt="报告1" style="width:100%;display:block;"></div><div style="min-width:100%;"><img src="素材/dora/科研报告_第2段.png" alt="报告2" style="width:100%;display:block;"></div><div style="min-width:100%;"><img src="素材/dora/科研报告_第3段.png" alt="报告3" style="width:100%;display:block;"></div><div style="min-width:100%;"><img src="素材/dora/科研报告_第4段.png" alt="报告4" style="width:100%;display:block;"></div></div><div style="position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;background:rgba(0,0,0,0.45);backdrop-filter:blur(8px);padding:6px 14px;border-radius:20px;"><button onclick="event.stopPropagation();reportCarouselPrev()" style="background:none;border:none;color:white;cursor:pointer;font-size:21px;padding:0 6px;">‹</button><span id="report-carousel-counter" style="color:white;font-size:17px;min-width:36px;text-align:center;">1/4</span><button onclick="event.stopPropagation();reportCarouselNext()" style="background:none;border:none;color:white;cursor:pointer;font-size:21px;padding:0 6px;">›</button></div></div></div></div>
+            <div style="display:flex;justify-content:center;align-items:center;"><div class="screenshot-container" style="aspect-ratio:14/15;max-height:calc(100vh - 72px);display:flex;flex-direction:column;"><div class="screenshot-chrome"><span class="screenshot-dot screenshot-dot--red"></span><span class="screenshot-dot screenshot-dot--yellow"></span><span class="screenshot-dot screenshot-dot--green"></span><span class="screenshot-url" id="report-carousel-title">科研产出分析报告（第1部分）</span></div><div style="position:relative;overflow:hidden;width:100%;flex:1;display:flex;"><div id="report-carousel-slides" style="display:flex;transition:transform 0.5s ease;width:100%;"><div style="min-width:100%;height:100%;display:flex;"><img src="素材/dora/科研报告_第1段.png" alt="报告1" style="width:100%;height:100%;object-fit:contain;display:block;"></div><div style="min-width:100%;height:100%;display:flex;"><img src="素材/dora/科研报告_第2段.png" alt="报告2" style="width:100%;height:100%;object-fit:contain;display:block;"></div><div style="min-width:100%;height:100%;display:flex;"><img src="素材/dora/科研报告_第3段.png" alt="报告3" style="width:100%;height:100%;object-fit:contain;display:block;"></div><div style="min-width:100%;height:100%;display:flex;"><img src="素材/dora/科研报告_第4段.png" alt="报告4" style="width:100%;height:100%;object-fit:contain;display:block;"></div></div><div style="position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;background:rgba(0,0,0,0.45);backdrop-filter:blur(8px);padding:6px 14px;border-radius:20px;z-index:2;"><button onclick="event.stopPropagation();reportCarouselPrev()" style="background:none;border:none;color:white;cursor:pointer;font-size:21px;padding:0 6px;">‹</button><span id="report-carousel-counter" style="color:white;font-size:17px;min-width:36px;text-align:center;">1/4</span><button onclick="event.stopPropagation();reportCarouselNext()" style="background:none;border:none;color:white;cursor:pointer;font-size:21px;padding:0 6px;">›</button></div></div></div></div>
           </div>
         </div>
       </section>
